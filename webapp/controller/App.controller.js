@@ -9,7 +9,7 @@ sap.ui.define(
     return Controller.extend("sap.ui.demo.walkthrough.App", {
       onInit: function () {
         const oData = {
-          recipient: { name: "UI5" },
+          input: { name: "UI5" },
         };
         const oModel = new JSONModel(oData);
         this.getView().setModel(oModel);
