@@ -17,12 +17,12 @@ sap.ui.define(
       },
       init: function () {
         UIComponent.prototype.init.apply(this, arguments);
-        var oData = {
+        const oData = {
           recipient: {
             name: "World",
           },
         };
-        var oModel = new JSONModel(oData);
+        const oModel = new JSONModel(oData);
         this.setModel(oModel);
         var i18nModel = new ResourceModel({
           bundleName: "sap.ui.demo.walkthrough.i18n.i18n",
