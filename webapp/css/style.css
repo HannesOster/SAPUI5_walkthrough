@@ -1,0 +1,12 @@
+html[dir="ltr"] .custom-button.app-demo-WT.custom-text {
+  margin-right: 0.125rem;
+}
+
+html[dir="rtl"].custom-button.app-demo-WT.custom-text {
+  margin-left: 0.125rem;
+}
+
+.app-demo-WT .custom-text {
+  display: inline-block;
+  font-weight: bold;
+}
