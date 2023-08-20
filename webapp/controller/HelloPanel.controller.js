@@ -14,14 +14,22 @@ sap.ui.define(
         MessageToast.show(sMsg);
       },
       onOpenDialog: function () {
-        if (!this.pDialog) {
-          this.pDialog = this.loadFragment({
+        const oView = this.getView();
+        if (!this.byId("helloDialog")) {
+          Fragment.load({
+            id: oView.getId(),
             name: "sap.ui.demo.walkthrough.view.HelloDialog",
+            controller: this,
+          }).then(function (oDialog) {
+            oView.addDependent(oDialog);
+            oDialog.open();
           });
+        } else {
+          this.byId("helloDialog").open();
         }
-        this.pDialog.then(function (oDialog) {
-          oDialog.open();
-        });
+      },
+      onCloseDialog: function () {
+        this.byId("helloDialog").close();
       },
     });
   }
