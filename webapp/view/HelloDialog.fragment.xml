@@ -2,7 +2,7 @@
     xmlns:core="sap.ui.core">
     <Dialog id="helloDialog" title="Hello {/recipient/name}">
         <content>
-            <core:Icon src="sap-icon://hello-world" size="8rem" class="sapUiMediumMargin"/>
+            <core:Icon src="sap-icon://hello-world" size="6rem" class="sapUiMediumMargin"/>
         </content>
         <beginButton>
             <Button text="{i18n>dialogCloseButtonText}" press=".onCloseDialog"/>
