@@ -1,0 +1,4 @@
+<core:FragmentDefinition xmlns="sap.m" xlmns="sap.ui.core">
+    <Dialog id="helloDialog" title="Hello {/recipient/name}"></Dialog>
+
+</core:FragmentDefinition>
